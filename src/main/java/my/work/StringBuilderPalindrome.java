@@ -2,13 +2,9 @@ package my.work;
 
 import org.apache.commons.lang3.StringUtils;
 
-import lombok.AccessLevel;
-import lombok.NoArgsConstructor;
+public class StringBuilderPalindrome implements Palindrome {
 
-@NoArgsConstructor(access = AccessLevel.NONE)
-public class StringBuilderPalindrome {
-
-	public static boolean isPalindrome(String str, boolean ignoreCase) {
+	public boolean isPalindrome(String str, boolean ignoreCase) {
 		return (!StringUtils.isEmpty(str) && isReversed(str, ignoreCase));
 	}
 
